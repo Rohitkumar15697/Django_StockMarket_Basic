@@ -1,0 +1,32 @@
+Project - StockMarket_WebApp
+
+-> This is a simple web application created in django. So if you find errors in my code please let me
+   know i will try to correct me next time when i work on any django project.
+
+Steps:
+Note: Name of virtual environment i have created for this project is 'django_env' 
+
+1. First i Create a user signup and login form in the home page of our web application.
+2. When you signup with your detail if these are correct and validated then message will show
+   'Your account created successfully!'
+3. While you are not logged in the home page will never show you the list of stock names which are
+   stored in django built-in database.
+4. When you logged-in with your credentials the signup and login form is disappeared and only 5
+   stock names will show on the home page and after these stock names there are load
+   more button, if you click on that all stock names will appear on the same page(home page).
+
+Note: Admin Login credentials:
+	username : admin
+	password : rohit
+
+5. Search bar will work only if you are logged in.
+6. You can't access stock list if you are not logged-in but you can access detail of the stock using
+    slug with url like (127.0.0.1:8000/detail/maruti-1)
+
+Not Done:
+	1. Video on detail page of stocks
+	2. Downloading data in excel file.
+
+Note: Please give me feedback about my work whether it is good or bad (How much '*' will you give
+me out of 5 * ).
+Thank You

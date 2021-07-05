@@ -1,0 +1,41 @@
+{%extends 'base.html'%}
+
+
+{%block title%}   {{data.stockname}} Detail    {%endblock%}
+
+
+{%block body%}
+
+
+<div class='container mt-5'>
+    <h3>{{data.stockname}}</h3>
+    <table class='table mt-5'>
+        <tr>
+            <td><b>Stock Name:</b> {{data.stockname}}<td>
+        </tr>
+        <tr>
+            <td><b>High price :</b> {{data.high}}</td>
+        </tr>
+        <tr>
+            <td><b>Low Price :</b> {{data.low}}</td>
+        </tr>
+        <tr>
+            <td><b>Actual Value :</b> {{data.value}}</td>
+        </tr>
+    </table>
+
+
+</div>
+
+    <div class='container mt-5'>
+
+        <div class='row'>
+            <div class='col-md-10'>
+                <b>{{data.stockname}}</b>:
+                    {{data.stockdetail}}
+            </div>
+        </div>
+    </div>
+
+
+{%endblock%}

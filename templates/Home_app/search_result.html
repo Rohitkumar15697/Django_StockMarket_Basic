@@ -1,0 +1,45 @@
+{%extends 'base.html'%}
+
+{%block title%} "{{search_element}}" Search Result  {%endblock%}
+
+
+{%block style%}
+
+
+
+
+{%endblock%}
+
+{%block body%}
+
+
+    <h5 class='mt-4'>There are {{count}} search results for "{{search_element}}"</h5>
+
+        <div class='container h-50 mt-5'>
+        
+        
+
+            <table class='table'> 
+                <thead>
+                    <tr>
+                        <th>Stock Name</th>
+                        <th>High</th>
+                        <th>Low</th>
+                        <th>Value(Rs=cr)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {%for result in search_result%}
+                        <tr>
+                            <td><a href={% url 'detail' result.slug %}>{{result.stockname}}</a></td>
+                            <td>{{result.high}}</td>
+                            <td>{{result.low}}</td>
+                            <td>{{result.value}}</td>
+                        <tr>
+                    {%endfor%}
+                </tbody>
+
+            </table>
+
+        </div>
+{%endblock%}
